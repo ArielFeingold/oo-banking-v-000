@@ -6,4 +6,5 @@ class Transfer
       @sender = sender
       @receiver = receiver
       @amount = amount
+    end
 end
