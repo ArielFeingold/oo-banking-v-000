@@ -12,7 +12,6 @@ class Transfer
     end
 
     def valid?
-
       @sender.balance > @amount && @receiver.valid? && @sender.valid? ? true : false
     end
 
@@ -26,5 +25,9 @@ class Transfer
           @receiver.balance = @receiver.balance + @amount
           @status = "complete"
       end
+    end
+
+    def reverse_transfer
+
     end
 end
