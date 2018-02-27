@@ -8,4 +8,8 @@ class Transfer
       @amount = amount
       @status = "pending"
     end
+
+    def valid?
+      @reciever.valid? @@ @sender.valid? ? true : flase
+    end
 end
