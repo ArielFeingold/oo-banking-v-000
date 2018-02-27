@@ -21,6 +21,7 @@ class Transfer
         @sender.balance = @sender.balance - @amount
         @receiver.balance = @receiver.balance + @amount
         @status = "complete"
+        self.delete
       else
         "Transaction rejected. Please check your account balance."
       end
