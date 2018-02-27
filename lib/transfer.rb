@@ -10,6 +10,6 @@ class Transfer
     end
 
     def valid?
-      @reciever.valid? @@ @sender.valid? ? true : flase
+      @reciever.valid? @@ @sender.valid? ? true : false
     end
 end
