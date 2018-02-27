@@ -20,7 +20,8 @@ attr_reader :name
 
   def valid?
     # binding.pry
-    (@status = "open") && @balance > 0.to_i ? true : false
+    @status = "open" && @balance > 0.to_i ? true : false
+    binding.pry
   end
 
 
